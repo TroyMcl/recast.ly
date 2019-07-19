@@ -3,7 +3,6 @@ import VideoListEntry from './VideoListEntry.js';
 var VideoList = (props, ) => (
   <div className="video-list">
     {props.videos.map(video => {
-      console.log(props)
       return <VideoListEntry video={video} selectVideo={props.selectVideo}/>;
     })}
     {/* <div><h5><em>{exampleVideoData[0].snippet.title}</em> {exampleVideoData[0].snippet.thumbnails.default.url}</h5></div>
