@@ -8,7 +8,6 @@ var searchYouTube = (options, callback) => {
     videoEmbeddable: true
   })
   .done(function (data) {
-    console.log(data);
     callback(data.items);
   })
 };
